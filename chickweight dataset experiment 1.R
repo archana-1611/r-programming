@@ -1,5 +1,5 @@
 # Read your ChickWeight CSV file
-chick_data <- read.csv("C:/Users/B Aishwarya/Downloads/ChickWeight.csv", stringsAsFactors = TRUE)
+chick_data <- read.csv("C:/Users/archana/Downloads/ChickWeight.csv", stringsAsFactors = TRUE)
 
 # Verify structure
 str(chick_data)
@@ -46,5 +46,6 @@ legend("topleft",
 
 model <- lm(weight ~ Time + Diet, data = chick_data)
 summary(model)
+
 
 
